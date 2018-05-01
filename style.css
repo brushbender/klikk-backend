@@ -1,0 +1,333 @@
+/* ---------------------- BODY -------------------------- */
+
+html, body {
+   height: 100%;
+}
+
+body {
+    padding: 0px;
+    margin: 0px;
+    overflow: auto;
+}
+
+/* ---------------------- COLORS -------------------------- */
+
+.bg-primary {
+	background: #E40571!important;
+}
+.bg-secondary {
+	background: #c3d9e0!important;
+}
+.bg-success {
+	background: #9B8F5D!important;
+}
+.bg-danger {
+	background: #D72E3D!important;
+}
+.bg-warning {
+	background: #ffce00!important;
+}
+.bg-info {
+	background: #7997AD!important;
+}
+.bg-light {
+	background:	#BBD4DC!important;
+}
+.bg-dark {
+	background:	#1F2026!important;
+}
+.bg-white {
+	background:	#ffffff!important;
+}
+.bg-grey {
+	background: #F2F2F2!important;
+}
+.bg-light-grey {
+	background:#EAF1F3!important;
+}
+
+
+.text-primary {
+	color: #E40571!important;
+}
+.text-secondary	{
+	color: #c3d9e0!important;
+}
+.text-success {
+	color: #9B8F5D!important;
+}
+.text-danger {
+	color: #D72E3D!important;
+}
+.text-warning {
+	color: #ffce00!important;
+}
+.text-info {
+	color: #7997AD!important;
+}
+.text-light {
+	color: #ffffff!important;
+}
+.text-dark {
+	color: #333333!important;
+}
+.text-muted {
+	color: #E8EEF1!important;
+}
+.text-white {
+	color: #ffffff!important;
+}
+
+
+/* ----------------------- BUTTONS ------------------------- */
+.btn {
+	border-radius: 0px;
+	border: #E40571;
+	font-size: inherit;
+}
+
+.btn-primary {
+	background: #E40571!important;
+}
+.btn-secondary {
+	background: #c3d9e0!important;
+}
+.btn-success {
+	background: #9B8F5D!important;
+}
+.btn-danger {
+	background: #D72E3D!important;
+}
+.btn-warning {
+	background: #ffce00!important;
+}
+.btn-info {
+	background: #7997AD!important;
+}
+.btn-light {
+	background:	#BBD4DC!important;
+}
+.btn-dark {
+	background:	#1F2026!important;
+}
+.btn-white {
+	background:	#ffffff!important;
+}
+.btn-grey {
+	background: #32343C!important;
+}
+
+.btn-outline-white {
+	border: solid #d7d4d4 1px;
+}
+
+/* ---------------------- FONTS -------------------------- */
+
+p	{ 
+	font-family: "soleil",sans-serif;
+	font-weight: 300;
+}
+
+a { 
+	font-family: "soleil",sans-serif;
+	font-weight: 300;
+	color: #E40571;
+}
+
+a:hover { 
+	font-family: "soleil",sans-serif;
+	font-weight: 300;
+	color: #E40571;
+	text-decoration: underline;
+}
+
+h1	{
+  	font-family: "soleil",sans-serif;
+  	font-weight: 600;
+  	font-size:36px;
+}
+
+h2	{
+  	font-family: "soleil",sans-serif;
+  	font-weight: 600;
+  	font-size:28px;
+}
+
+h3	{
+  	font-family: "soleil",sans-serif;
+  	font-weight: 300;
+  	font-size:22px;
+}
+
+h4	{
+  	font-family: "soleil",sans-serif;
+  	font-weight: 300;
+  	font-size:18px;
+}
+
+h5	{
+  	font-family: "soleil",sans-serif;
+  	font-weight: 300;
+  	font-size:14px;
+}
+
+
+
+
+
+/* ---------------------- STRUCTURE --------------------------- */
+
+.show {
+	
+}
+
+/* ---------------------- STATISTICS --------------------------- */
+
+#statistics {
+	display: block;
+	height:100px;
+}
+
+#pie-semi-circle-cpu {
+	max-height: 250px;
+}
+
+path.highcharts-point.highcharts-color-0 {
+	fill:#E40571;
+}
+
+path.highcharts-point.highcharts-color-1 {
+	fill:grey;
+}
+
+text.highcharts-credits {
+	display: none;
+}
+
+
+/* ---------------------- SERVERS --------------------------- */
+
+.server-active {
+  height: 25px;
+  width: 25px;
+  background-color: rgba(33, 220, 39, 1);
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.server-warning {
+  height: 25px;
+  width: 25px;
+  background-color: rgba(255, 171, 0, 1);
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.server-danger{
+  height: 25px;
+  width: 25px;
+  background-color: rgba(245, 66, 66, 1);
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.servers-table {
+	width:100%;
+}
+
+.td-cpu {
+	min-width: 75px;
+}
+.td-os {
+	min-width: 75px;
+}
+.td-changes {
+	min-width: 75px;
+}
+
+/* ---------------------- NAVBAR --------------------------- */
+
+li.nav-item a.nav-link { 
+	color:#c3d9e0!important;
+}
+
+li.nav-item.active a.nav-link {
+	color:#E40571!important;
+}
+
+li.nav-item.active a.nav-link:hover {
+	color:#E40571!important;
+}
+
+li.nav-item a.nav-link:hover {
+	color:#E40571!important;
+}
+
+#sidebar {
+	height:100vh;
+	
+}
+
+.warning {
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+    float: right;
+}
+
+.active-marker {
+	display: inline-block;
+    height: 10px;
+    width: 10px;
+    position:absolute;
+    right:0px;
+ 
+
+}
+
+/* ---------------------- CUSTOM CHECKBOX --------------------------- */
+
+.customCheckbox {
+  float: left;
+  position: relative;  
+  width: 20px;
+  height: 20px;
+  background: #ffffff;
+  border-radius: 2px;
+  border: 1px solid #d2d2d2;
+  box-shadow: inset 0px 1px 0px rgba(0, 0, 0, 0.1);
+  margin-right: 5px;
+  overflow: hidden;
+}
+
+.customCheckbox.customCheckboxChecked {
+  background: #E40571;
+  border: 1px solid #60ACCC;
+}
+
+.customCheckbox input {
+  opacity: 0;
+  cursor: pointer;
+  z-index: 5;
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.customCheckbox span {
+  display: none;
+  text-align: center;
+  line-height: 20px;
+  font-size: 90%;
+  color: #fff;
+}
+
+.customCheckbox.customCheckboxChecked span {
+  display: block;
+}
+
+
+
