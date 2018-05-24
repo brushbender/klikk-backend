@@ -20,6 +20,7 @@
 		<link rel="stylesheet" href="https://use.typekit.net/oyj0xrj.css">
 		<link href="css/open-iconic.css" rel="stylesheet">
 		<link rel="stylesheet" href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" integrity="sha384-yBEPaZw444dClEfen526Q6x4nwuzGO6PreKpbRVSLFCci3oYGE5DnD1pNsubCxYW" crossorigin="anonymous">
+		<link rel="stylesheet" href="css/bootstrap-slider.min.css">
 		<link rel="stylesheet" href="style.css">
 
 		
@@ -44,7 +45,7 @@
 				<nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
 					
 					<a class="navbar-brand" href="#">
-						<img class="mx-auto d-block pl-5" src="images/Klikk-logo-horizontal-RGB-White-Color.svg" width="30%" height="30%">
+						<img class="mx-auto d-block pl-5" src="images/Klikk-logo-horizontal-RGB-White-Color.svg" width="30%" >
 					</a>
 						
 					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -93,10 +94,11 @@
 				<div class="row justify-content-center h-100">
 				
 					<!-- NAVBAR SIDEBAR -->
-					<div class="col-md-2 bg-dark d-none d-md-block" id="sidebar">
-	
+					<div class="col-md-2 bg-dark d-none d-md-block " id="sidebar sticky-sidebar">
+					
+							<div class="sticky-top">
 							<a class="navbar-brand" href="#">
-								<img class="mx-auto d-block mt-5" src="images/Klikk-logo-horizontal-RGB-White-Color.svg" width="50%" height="50%">
+								<img class="mx-auto d-block mt-5" src="images/Klikk-logo-horizontal-RGB-White-Color.svg" width="50%" >
 							</a>
 							
 							<ul class="navbar-nav mr-auto text-secondary p-5">
@@ -132,9 +134,10 @@
 								</li>-->
 								
 							</ul>
-	
+							</div>
 	
 					</div>
+					
 					
 					<!-- MAIN CONTENT -->
 					<div class="col-sm-12 col-md-10">
@@ -417,7 +420,6 @@
 		</div>
 		
 
-
 		
 		<script src="js/modernizr-3.5.0.min.js"></script>
 		<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
@@ -426,10 +428,19 @@
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
 		<script src="https://code.highcharts.com/highcharts.src.js" integrity="sha384-HuWFiKdEM7i9cDxxAcjz7FPZZPpXtKRMYyNb3iCUUSxeLhIG0mCpvPQct+HExlKi" crossorigin="anonymous"></script>
 		<script src="js/countries.js"></script>
+		<script src="js/bootstrap-slider.min.js"></script>
+		<script language="javascript">
+			populateCountries("country");
+			populateCountries("country2");
+			createEditableSelect(document.forms[0].inputDropdownCardNumber);
+						
+		</script>
 		<script src="js/bootstrap-switch.js"></script>
 		<!--[if lt IE 9]>
 			<script src="https://code.highcharts.com/modules/oldie.js"></script>
+			
 			<![endif]-->
+		<script type="text/javascript" src="js/mdb.js"></script>
 		<script src="js/main.js"></script>
 		<script src="js/statistics.js"></script>
 
