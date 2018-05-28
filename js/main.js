@@ -12,7 +12,8 @@ $("#filter-tools").click(function() {
 
 
 /* SIDEBAR FOLLOW PAGE */
-
+var height = $('.content').height()
+$('.sidebar').height(height)​
 
 
 /* Function for changing background color on checkboxes */
@@ -172,6 +173,44 @@ $("#script-btn").click(function() {
 });
 
 
+/* PREVENT ACCORDION FROM ACTIVATING WHEN CLICKING CHECKBOX */
+$("input[type=checkbox]").click(function(event){
+    event.stopPropagation();
 
+});
+$("button.trash").click(function(event){
+    event.stopPropagation();
 
+});
+
+/* REMOVE PANEL FROM ACCORDION BY PRESSING THRASH */
+    $(function() {
+      $('#accordion-trash-1').click(function() {
+	      $('#accordion-1').empty();
+
+      });
+    });
+    
+    $(function() {
+      $('#accordion-trash-2').click(function() {
+	      $('#accordion-2').empty();
+
+      });
+    });
+    
+        $(function() {
+      $('#accordion-trash-3').click(function() {
+	      $('#accordion-3').empty();
+
+      });
+    });
+    
+   
+ /* ON ACCORDION ROLLOVER AND CHECK CHANGE COLOR */
+ 
+$(function() {                       //run when the DOM is ready
+  $(".card-header").click(function() {  //use a class, since your ID gets mangled
+    $(this).toggleClass("accordion-rollover");      //add the class to the clicked element
+  });
+});
 

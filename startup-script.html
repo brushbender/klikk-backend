@@ -1,0 +1,391 @@
+<!doctype html>
+
+<html class="no-js" lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		
+		<title>Klikk Backend</title>
+		<link rel="manifest" href="site.webmanifest">
+		<meta name="description" content="Klikk Backend">
+		<meta name="author" content="Kjetil Ravnås">
+		
+		<link rel="apple-touch-icon" href="icon.png">
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/bootstrap.css">
+		<link rel="stylesheet" href="css/bootstrap-slider.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+		<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" integrity="sha384-f+5ueJUSVTts5w31cpiAeriD3134eXSnL//1cJCcmTPkyO6v7j98iJKup9dv6+fg" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://use.typekit.net/oyj0xrj.css">
+		<link href="css/open-iconic.css" rel="stylesheet">
+		<link rel="stylesheet" href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" integrity="sha384-yBEPaZw444dClEfen526Q6x4nwuzGO6PreKpbRVSLFCci3oYGE5DnD1pNsubCxYW" crossorigin="anonymous">
+		<link rel="stylesheet" href="css/bootstrap-slider.min.css">
+		<link rel="stylesheet" href="style.css">
+
+		
+		
+		<!--[if lt IE 9]>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+		<!--[if lte IE 9]>
+        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+        <![endif]-->
+		
+
+
+		<div class="wrapper">
+			<div class="container-fluid h-100 p-0 m-0">
+				
+				
+				<!-- NAVBAR TOP HIDDEN -->
+				<div class="d-md-none">
+				<nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
+					
+					<a class="navbar-brand" href="#">
+						<img class="mx-auto d-block pl-5" src="images/Klikk-logo-horizontal-RGB-White-Color.svg" width="30%" >
+					</a>
+						
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+
+					<div class="collapse navbar-collapse" id="navbarSupportedContent">
+						<ul class="navbar-nav mr-auto text-secondary">
+							<li class="nav-item active">
+								<a class="nav-link" href="#">Servers <span class="sr-only">(current)</span></a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">Overview</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">Add Server</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">Support</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">Account / Billing</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">Settings</a>
+							</li>
+							<!--<li class="nav-item">
+								<a class="nav-link disabled" href="#">Disabled</a>
+							</li>
+							<li class="nav-item dropdown">
+								<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></a>
+								<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+									<a class="dropdown-item" href="#">Action</a>
+									<a class="dropdown-item" href="#">Another action</a>
+									<div class="dropdown-divider"></div>
+									<a class="dropdown-item" href="#">Something else here</a>
+								</div>
+							</li>-->
+							
+						</ul>
+					</div>
+				</nav>
+				</div>
+				
+				
+				<div class="row justify-content-center h-100">
+				
+					<!-- NAVBAR SIDEBAR -->
+					<div class="col-md-2 bg-dark d-none d-md-block " id="sidebar sticky-sidebar">
+					
+							<div class="sticky-top">
+							<a class="navbar-brand" href="#">
+								<img class="mx-auto d-block mt-5" src="images/Klikk-logo-horizontal-RGB-White-Color.svg" width="50%" >
+							</a>
+							
+							<ul class="navbar-nav mr-auto text-secondary p-5">
+								<li class="nav-item active ">
+									<a class="nav-link" href="#">Servers <span class="sr-only">(current)</span><span class="warning"><img src="images/icon-warning.svg"></span><span class="active-marker"><img src="images/icon-marker.svg"></span></a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">Overview</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">Add Server</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">Support</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">Account / Billing</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">Settings</a>
+								</li>
+								<!--<li class="nav-item">
+									<a class="nav-link disabled" href="#">Disabled</a>
+								</li>
+								<li class="nav-item dropdown">
+									<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></a>
+									<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+										<a class="dropdown-item" href="#">Action</a>
+										<a class="dropdown-item" href="#">Another action</a>
+										<div class="dropdown-divider"></div>
+										<a class="dropdown-item" href="#">Something else here</a>
+									</div>
+								</li>-->
+								
+							</ul>
+							</div>
+	
+					</div>
+					
+					<!-- MAIN CONTENT -->
+					<div class="col-sm-12 col-md-10">
+						
+						
+						<!-- SECONDARY MENU -->
+						<section id="secondary-menu ">
+							<div class="container d-none d-sm-block">
+								<div class="row">
+									<div class="col-md-12 p-3">
+										<a class="float-right text-dark ml-5" href="#"><span class="p-3"><img src="images/icon-user.svg" width="30" height="30"></span><span>Mr. Robot</span></a>
+										<a class="float-right text-dark" href="#"><span class="p-3"><img src="images/icon-create.svg" width="30" height="30"></span><span>Create</span></a>
+									</div>
+								</div>
+							</div>
+						</section>
+							
+						
+						<!-- HEADING -->
+						<section>
+							<div class="container">
+								<div class="row ">
+									
+									<div class="col-md-12">
+										<h2>Startup Script 
+											<span>
+												<button class="btn btn-link text-dark">
+													<i class="fa fa-gear"> </i>
+												</button>
+											</span>
+										</h2>
+									</div>
+									
+									<div class="col-12 col-sm-12 p-0">
+										<button class="btn btn-link">
+											<span>
+												<img src="images/icon-create.svg" width="30" height="30">
+											</span>
+											<span class="text-primary"> Add New</span>
+										</button>
+									</div>
+									  
+								</div>
+							</div>
+						</section>
+						
+						<section>
+							<div class="container">							
+								<div class="row">
+									<div class="col-12">
+								<!--Accordion wrapper-->
+							<div class="accordion" id="accordionEx" role="tablist" aria-multiselectable="true">
+							
+							    <!-- Accordion card -->
+							    <div class="card pt-2 pb-0" id="accordion-1">
+							
+							        <!-- Card header -->
+							        <div class="card-header" role="tab" id="headingOne">
+							            <a data-toggle="collapse" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">				
+								            <div class="row text-dark">
+									            <div class="col-1"><input type="checkbox" class="primary-checkbox"></div>
+									            <div class="col-3"><h4 class="m-0 d-inline align-bottom">My Little Script</h4></div>
+									            <div class="col-2"><h5 class="m-0 d-inline align-bottom">BOOT</h5></div>
+									            <div class="col-3"><h5 class="m-0 d-inline align-bottom">2018-02-26 13:46:12</h5></div>
+									            <div class="col-1"><button class="btn btn-lg btn-link text-dark d-inline align-top p-0 m-0"><h2><i class="fa fa-gear "></i></h2></button></div>
+									            <div class="col-1"><button class="btn btn-lg btn-link text-dark d-inline align-top p-0 m-0 trash" id="accordion-trash-1"><h2><i class="fa fa-trash-o "></i></h2></button></div>
+									            <div class="col-1"><i class="fa fa-angle-down rotate-icon"></i></div>
+								            </div>
+											
+							            </a>
+							        </div>
+							
+							        <!-- Card body -->
+							        <div id="collapseOne" class="collapse" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordionEx" >
+							            <div class="card-body">
+							            
+										<div class="col-12 mt-5 mb-5" id="script-form">
+											<label class="text-secondary d-block">Name</label>
+											<input type="text" class="col-4 form-control" placeholder="Script name">
+											<label class="text-secondary d-block">Type</label>
+											<button class="col-4 btn btn-outline-white btn-lg btn-block text-left form-control" type="button" data-toggle="dropdown">
+												BOOT
+												<i class="mt-1 fa fa-chevron-down text-right float-right"> </i>
+											</button>
+											<div class="dropdown-menu col-12 col-md-6">
+												<a class="dropdown-item" href="#"><h5 class="text-dark">Link 1</h5></a>
+												<a class="dropdown-item" href="#"><h5 class="text-dark">Link 2</h5></a>
+												<a class="dropdown-item" href="#"><h5 class="text-dark">Link 3</h5></a>
+											</div>
+											<label class="text-secondary d-block">Script</label>
+											<textarea rows="15" cols="80" class="col-8 form-control"></textarea>
+											<button class="btn btn-primary btn-lg pl-5 pr-5 pt-3 pb-3 mt-5"><h4>UPDATE SCRIPT</h4></button>												
+										</div>
+
+ 
+
+							        </div>
+							    </div>
+							    </div>
+							    <!-- Accordion card -->
+							
+							    <!-- Accordion card -->
+							    <div class="card pt-2 pb-0" id="accordion-2">
+							
+							        <!-- Card header -->
+							        <div class="card-header" role="tab" id="headingTwo">
+							            <a data-toggle="collapse" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">				
+								            <div class="row text-dark">
+									            <div class="col-1"><input type="checkbox" class="primary-checkbox"></div>
+									            <div class="col-3"><h4 class="m-0 d-inline align-bottom">My Little Script 2</h4></div>
+									            <div class="col-2"><h5 class="m-0 d-inline align-bottom">BOOT</h5></div>
+									            <div class="col-3"><h5 class="m-0 d-inline align-bottom">2018-02-26 13:46:12</h5></div>
+									            <div class="col-1"><button class="btn btn-lg btn-link text-dark d-inline align-top p-0 m-0"><h2><i class="fa fa-gear "></i></h2></button></div>
+									            <div class="col-1"><button class="btn btn-lg btn-link text-dark d-inline align-top p-0 m-0 trash" id="accordion-trash-2"><h2><i class="fa fa-trash-o "></i></h2></button></div>
+									            <div class="col-1"><i class="fa fa-angle-down rotate-icon"></i></div>
+								            </div>
+											
+							            </a>
+							        </div>
+							
+							        <!-- Card body -->
+							        <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo" data-parent="#accordionEx" >
+							            <div class="card-body">
+							            
+										<div class="col-12 mt-5 mb-5" id="script-form">
+											<label class="text-secondary d-block">Name</label>
+											<input type="text" class="col-4 form-control" placeholder="Script name">
+											<label class="text-secondary d-block">Type</label>
+											<button class="col-4 btn btn-outline-white btn-lg btn-block text-left form-control" type="button" data-toggle="dropdown">
+												BOOT
+												<i class="mt-1 fa fa-chevron-down text-right float-right"> </i>
+											</button>
+											<div class="dropdown-menu col-12 col-md-6">
+												<a class="dropdown-item" href="#"><h5 class="text-dark">Link 1</h5></a>
+												<a class="dropdown-item" href="#"><h5 class="text-dark">Link 2</h5></a>
+												<a class="dropdown-item" href="#"><h5 class="text-dark">Link 3</h5></a>
+											</div>
+											<label class="text-secondary d-block">Script</label>
+											<textarea rows="15" cols="80" class="col-8 form-control"></textarea>
+											<button class="btn btn-primary btn-lg pl-5 pr-5 pt-3 pb-3 mt-5"><h4>UPDATE SCRIPT</h4></button>												
+										</div>
+
+ 
+
+							        </div>
+							    </div>
+							    </div>
+							    <!-- Accordion card -->
+							
+							   <!-- Accordion card -->
+							    <div class="card pt-2 pb-0" id="accordion-3">
+							
+							        <!-- Card header -->
+							        <div class="card-header" role="tab" id="headingThree">
+							            <a data-toggle="collapse" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">				
+								            <div class="row text-dark">
+									            <div class="col-1"><input type="checkbox" class="primary-checkbox"></div>
+									            <div class="col-3"><h4 class="m-0 d-inline align-bottom">My Little Script 3</h4></div>
+									            <div class="col-2"><h5 class="m-0 d-inline align-bottom">BOOT</h5></div>
+									            <div class="col-3"><h5 class="m-0 d-inline align-bottom">2018-02-26 13:46:12</h5></div>
+									            <div class="col-1"><button class="btn btn-lg btn-link text-dark d-inline align-top p-0 m-0"><h2><i class="fa fa-gear "></i></h2></button></div>
+									            <div class="col-1"><button class="btn btn-lg btn-link text-dark d-inline align-top p-0 m-0 trash" id="accordion-trash-3"><h2><i class="fa fa-trash-o "></i></h2></button></div>
+									            <div class="col-1"><i class="fa fa-angle-down rotate-icon"></i></div>
+								            </div>
+											
+							            </a>
+							        </div>
+							
+							        <!-- Card body -->
+							        <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree" data-parent="#accordionEx" >
+							            <div class="card-body">
+							            
+										<div class="col-12 mt-5 mb-5" id="script-form">
+											<label class="text-secondary d-block">Name</label>
+											<input type="text" class="col-4 form-control" placeholder="Script name">
+											<label class="text-secondary d-block">Type</label>
+											<button class="col-4 btn btn-outline-white btn-lg btn-block text-left form-control" type="button" data-toggle="dropdown">
+												BOOT
+												<i class="mt-1 fa fa-chevron-down text-right float-right"> </i>
+											</button>
+											<div class="dropdown-menu col-12 col-md-6">
+												<a class="dropdown-item" href="#"><h5 class="text-dark">Link 1</h5></a>
+												<a class="dropdown-item" href="#"><h5 class="text-dark">Link 2</h5></a>
+												<a class="dropdown-item" href="#"><h5 class="text-dark">Link 3</h5></a>
+											</div>
+											<label class="text-secondary d-block">Script</label>
+											<textarea rows="15" cols="80" class="col-8 form-control"></textarea>
+											<button class="btn btn-primary btn-lg pl-5 pr-5 pt-3 pb-3 mt-5"><h4>UPDATE SCRIPT</h4></button>												
+										</div>
+
+ 
+
+							        </div>
+							    </div>
+							    </div>
+							    <!-- Accordion card -->
+							</div>
+							<!--/.Accordion wrapper-->
+									</div>
+								</div>
+							</div>
+						</section> 
+						
+						
+						
+	    			</div><!-- col-12 main content -->
+
+				</div><!-- row justified 100 -->
+				
+				
+			</div><!-- container fluid -->
+		</div><!-- wrapper -->
+		
+
+
+		
+		<script src="js/modernizr-3.5.0.min.js"></script>
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+		<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js" integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+		<script src="https://code.highcharts.com/highcharts.src.js" integrity="sha384-HuWFiKdEM7i9cDxxAcjz7FPZZPpXtKRMYyNb3iCUUSxeLhIG0mCpvPQct+HExlKi" crossorigin="anonymous"></script>
+		<script src="js/countries.js"></script>
+		<script src="js/bootstrap-slider.min.js"></script>
+		<script language="javascript">
+			populateCountries("country");
+			populateCountries("country2");
+			createEditableSelect(document.forms[0].inputDropdownCardNumber);
+						
+		</script>
+		<script src="js/bootstrap-switch.js"></script>
+		<!--[if lt IE 9]>
+			<script src="https://code.highcharts.com/modules/oldie.js"></script>
+			
+			<![endif]-->
+		<script type="text/javascript" src="js/mdb.js"></script>
+		<script src="js/main.js"></script>
+		<script src="js/statistics.js"></script>
+
+		
+		
+		
+		
+		
+		        <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+        <script>
+            window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
+            ga('create','UA-XXXXX-Y','auto');ga('send','pageview')
+        </script>
+        <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+	</body>
+</html>
